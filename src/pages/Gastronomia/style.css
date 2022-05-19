@@ -1,0 +1,16 @@
+.section-wrapper-item-image{
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+.section-wrapper-item-image img{
+    position: relative;
+}
+.swiperslider-link span{
+    display: block;
+    text-align: center;
+}
+.page_description_2 p{
+    text-align: justify;
+    margin-bottom: 13px;
+}

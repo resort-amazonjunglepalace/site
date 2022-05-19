@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;600;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*, *::before, *::after{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+/*
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+*/
+:root{
+  --background: #37562F;
+  --secondary: #638547;
+  --scrollbar: #4d4d57;
+  --scrollbar-background: transparent;
+}
+html{
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary) transparent;
+  background: var(--background);
+}
+
+/*
+::-webkit-scrollbar {
+  width: 0.2rem;
+}*/
+/* Track
+::-webkit-scrollbar-tracke {
+  background: transparent;
+  border-radius: 0.25rem;
+} */
+/* Handle 
+::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+  border-radius: 0.2rem;
+}*/
+
+
+html, body{
+  font-family: 'Montserrat', sans-serif;
+  font-size:100%;
+  background-color: #FFF; /*remover depois*/
+}
+body{
+  scrollbar-color: var(--scrollbar) var(--scrollbar-background);
+  background-color: #FFF;
+}
+.container{
+  max-width: 900px;
+  width: 100%;
+  margin:auto;
+  box-sizing: border-box;
+}
+.wrapper-responsivo{
+  display: none;
+}
+.menu-responsivo{
+  display: none;
+}
+.menu-burger{
+  display: none;
+}
+
+
+
+@media only screen and (max-width: 970px){
+  .wrapper-responsivo{
+    display: block;
+  }
+  .header_top,
+  .header_top.fixo{
+    /*height:100% !important;
+    background: rgba(0,0,0,0.8) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;*/
+  }
+  .logo{
+    width: 100% !important;
+    /* flex: 0 0 auto !important;
+    position: absolute;
+    display: flex;
+    background-color: red;
+    top: 0; */
+  }
+  .logo a{
+    width: 100% !important;
+    text-align: center !important;
+  }
+  .logo img {
+    margin-left: 0px !important;
+  }
+  .menu{
+    background: blue;
+    /* flex: 0 0 auto !important;
+    top: 130px !important;
+    position: absolute !important; */
+    width: 100% !important;
+    display: none !important;
+  }
+  .menu ul{
+    flex-direction: column !important;
+    justify-content: center !important;
+    width: 100% !important;
+    text-align: center;
+  }
+  .menu li{
+    width: 100% !important;
+  }
+  .menu a{
+      width: 100%;
+  }
+  .wrapper {
+      display: none !important;
+  }
+  .wrapper-flex{
+      display: flex;
+      flex-direction: column;
+      flex-flow: column wrap;
+      margin:0;
+  }
+  .item{
+      flex: auto;
+      width: 100% !important;
+      height: auto;
+  }
+  .item-cards{
+    display: flex;
+    flex-direction: column !important;
+    flex-flow: none !important;
+    justify-content: center !important;
+    width: 100% !important;
+    height: auto;
+    position: relative;
+    left:0 !important;
+    
+  }
+  .item-card-box{
+    margin: auto !important;
+    width: 100% !important;
+  }
+  .item-card-box:last-child{
+    margin: auto !important;
+    margin-top: 20px !important;
+  }
+  .section-wrapper{
+    display: flex;
+    flex-direction: column !important;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .section-wrapper-item{
+    width: 100% !important;
+  }
+  .section-wrapper-item-image{
+    height: 100% !important;
+  }
+  .content-heading{
+    margin:0 !important
+  }
+  .section-wrapper-midias-item:first-child{
+    width: 100% !important;
+    text-align: center !important;
+    padding:10px 0 !important;
+  }
+  .section-wrapper-midias-item-title{
+    font-size:1rem !important;
+  }
+  .section-wrapper-midias-item img{
+    width: 20px;
+    height: 20px;
+  }
+  .section-wrapper-midias-item:last-child{
+    width: 100% !important;
+    height: auto !important;
+    padding:10px 0 !important;
+  }
+  .section-wrapper-midias-item-3{
+    flex-direction: column !important;
+  }
+  .section-wrapper-midias-item-box img{
+    width: 20px !important;
+    height: 20px !important;
+  }
+  .section-wrapper-midias-item-box strong,
+  .section-wrapper-midias-item-box span{
+    font-size:0.8rem !important;
+  }
+/* 
+  .header_top{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .logo{
+    display: block;
+  }
+  .menu {
+    position: relative;
+    display: block;
+    width: 100%;
+    top:0;
+    left:0;
+  }
+  .menu ul{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: red;
+  }
+  .menu li{
+    width: 100%;
+    padding:0;
+    margin:0;
+  }
+  .menu a{
+    display: block;
+    text-align: center;
+  } */
+}

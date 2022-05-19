@@ -1,0 +1,12 @@
+.logo{
+    /* width: 20%; */
+    flex:auto;
+    height: 130px;
+    z-index: 9;
+}
+.logo img{
+    margin-left:20px;
+    width: 139px;
+    height: 139px;
+    animation:none;
+}

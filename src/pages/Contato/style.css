@@ -1,0 +1,42 @@
+.form-contato{
+    max-width: 600px;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-contato label,
+.form-contato .text-input,
+.form-contato .textarea{
+    width: 100%;
+    border-radius:6px;
+}
+.form-contato label{
+    margin-top:10px;
+    margin-bottom: 20px;
+}
+.form-contato .text-input{
+    padding:8px 3px;
+    border:1px solid #111;
+    font-size:1rem;
+    cursor:pointer;
+}
+.form-contato .textarea{
+    padding:8px 3px;
+    border:1px solid #111;
+    font-size:1rem;
+    cursor:pointer;
+    height: 150px;
+}
+.form-contato .btn{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    border: 1px solid #688B4A;
+    background-color: #688B4A;
+    color: #FFF;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+}

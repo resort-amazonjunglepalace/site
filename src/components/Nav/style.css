@@ -1,0 +1,149 @@
+.menu{
+    /* width: 80%; */
+    /* flex: 0 0 80%; */
+    flex:auto;
+    z-index: 2;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    height: 100%;
+    align-items: center;
+}
+.menu li{
+    margin: 0 20px;
+}
+.menu a{
+    color:#FFF;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+}
+.menu a:hover{
+    text-decoration: underline;
+}
+.menu-extra{
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+
+    /* margin-left:20px; */
+}
+.menu-translate{
+    margin:0 20px;
+}
+.menu-translate a{
+    background-color: #FFF;
+    font-size:11px;
+    font-weight: 600;
+    color:#111;
+    border-radius: 4px;
+    padding:10px;
+    position: relative;
+    
+}
+.menu-translate ul li a{
+    cursor: pointer;
+    width: 100%;
+    display: block;
+}
+.submenu-translate{
+    display: block;
+    width:100%;
+    margin:0;
+}
+.submenu-translate li{
+    margin:0;
+    width: 100%;
+}
+.submenu-translate li a{
+    margin:0;
+}
+.menu-translate a:hover{
+    text-decoration: none;
+}
+.menu-translate-btn{
+    border: none;
+    cursor: pointer;
+    background-color: #FFF;
+    font-size:11px;
+    font-weight: 600;
+    color:#111;
+    border-radius: 4px;
+    padding:10px;
+    position: relative;
+}
+.menu-translate-btn a{
+    text-transform: none;
+}
+.menu-translate-btn img{
+    position: relative;
+    animation:none;
+    width: 15px;
+    height: 15px;
+    z-index: 2;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.menudrop-content a img{
+    position: relative;
+    animation:none;
+    width: 15px;
+    height: 15px;
+    z-index: 2;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.menudrop-content{
+    min-width: 135px;
+    display: none;
+    position: absolute;
+    /* background-color: #f9f9f9; */
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    z-index: 1;
+    /* border-radius: 4px; */
+}
+.menudrop-content a {
+    color: black;
+    padding: 7px 16px;
+    text-decoration: none;
+    text-transform: none;
+    display: block;
+    border-radius: 0px;
+    margin-top:-2px;
+    border-top:1px solid #ccc;
+}
+.menudrop-content a:hover {
+    /* background-color: #f1f1f1; */
+}
+.menu-translate:hover .menudrop-content {
+    display: block;
+}
+.menu-translate:hover .menu-translate-btn {
+  /* background-color: #e0ffe1; */
+}
+
+
+
+
+
+
+.menu-social{
+    vertical-align: middle;
+}
+.menu-social a{
+    margin:0 10px;
+}
+.menu-social img{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    right: 0;
+    animation:none;
+
+}
